@@ -1,6 +1,6 @@
 import { star } from "../assets /icons"
 
-const PopularProductsCard = ( {imgURL, name, price} ) => {
+const PopularProductsCard = ( {imgURL, name, price, rating} ) => {
   return (
     <div className="flex flex-1 flex-col w-full max-sm:w-full">
         <img 
@@ -11,7 +11,7 @@ const PopularProductsCard = ( {imgURL, name, price} ) => {
             <img 
             src = {star} alt = "rating" width = {24} height={24}
             />
-            <p className="font-montserrat text-xl text-slate-gray leading-normal ">(4.5)</p>
+            <p className="font-montserrat text-xl text-slate-gray leading-normal ">({rating})</p>
             
         </div>
             <h3 className="mt-2 font-palanquin font-semibold leading-normal  text-2xl">{name}</h3>
